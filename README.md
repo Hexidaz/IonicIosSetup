@@ -1,5 +1,5 @@
 # NodeJS & NPM Installation
-
+Install NVM
 ```
 $ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
 ```
@@ -11,8 +11,15 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 ```
 
+Install node and npm
 ```
 $ nvm install --lts=erbium
+```
+
+# Homebrew
+Install Homebrew
+```
+$ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 ```
 
 # Ionic and its dependencies
@@ -21,14 +28,8 @@ $ npm install -g ionic@4.12.0
 $ npm isntall -g --save @angular/cli
 $ npm install -g cordova
 $ npm install -g ios-sim
-$ gem install cocoapods
-```
-
-# Homebrew
-
-```
-$ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 $ brew install ios-deploy
+$ gem install cocoapods
 ```
 
 # XCode
